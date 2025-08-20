@@ -44,7 +44,8 @@ dependencies {
     testImplementation("org.testcontainers:kafka")
     testImplementation("org.testcontainers:postgresql")
     testImplementation("org.testcontainers:r2dbc")
-    testImplementation("com.github.tomakehurst:wiremock-jre8:2.35.1")
+    testImplementation("org.wiremock:wiremock-standalone:3.9.0")
+    testImplementation("org.springframework.boot:spring-boot-starter-tomcat")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
