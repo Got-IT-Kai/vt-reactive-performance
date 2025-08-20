@@ -45,6 +45,7 @@ dependencies {
     testImplementation("org.testcontainers:postgresql")
     testImplementation("org.testcontainers:r2dbc")
     testImplementation("org.wiremock:wiremock-standalone:3.9.0")
+    testImplementation("org.wiremock.integrations.testcontainers:wiremock-testcontainers-module:1.0-alpha-15")
     testImplementation("org.springframework.boot:spring-boot-starter-tomcat")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }

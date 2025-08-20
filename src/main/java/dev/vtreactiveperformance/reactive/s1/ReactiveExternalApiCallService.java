@@ -9,7 +9,11 @@ import reactor.core.publisher.Mono;
 @RequiredArgsConstructor
 public class ReactiveExternalApiCallService {
     private final WebClient webClient;
+
     public Mono<String> callExternalApi() {
-        return null;
+        return webClient.get()
+                .uri("/dummy/resource")
+                .retrieve()
+                .bodyToMono(String.class);
     }
 }
