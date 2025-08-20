@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: vt-reactive-performance
+
+external:
+  api:
+    base-url: http://localhost:9999
+
